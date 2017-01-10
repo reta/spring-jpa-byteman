@@ -7,6 +7,7 @@ import javax.inject.Inject;
 
 import org.jboss.byteman.contrib.bmunit.BMRule;
 import org.jboss.byteman.contrib.bmunit.BMRules;
+import org.jboss.byteman.contrib.bmunit.BMUnitConfig;
 import org.junit.After;
 import org.junit.Rule;
 import org.junit.Test;
@@ -23,6 +24,7 @@ import com.example.spring.services.CustomerService;
 
 @RunWith( SpringJUnit4ClassRunner.class )
 @ContextConfiguration(loader = AnnotationConfigContextLoader.class, classes = { AppConfig.class } )
+@BMUnitConfig
 public class CustomerServiceTestCase {
 	@Rule public BytemanRule byteman = BytemanRule.create( CustomerServiceTestCase.class );
 	@Inject private CustomerService customerService;	

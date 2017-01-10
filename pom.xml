@@ -13,7 +13,7 @@
 		<org.hibernate.version>4.2.0.Final</org.hibernate.version>
 		<org.slf4j.version>1.7.2</org.slf4j.version>
 		<logback.version>1.0.9</logback.version>
-		<byteman.version>2.1.2</byteman.version>
+		<byteman.version>3.0.2</byteman.version>
 	</properties>
 
 	<dependencies>
